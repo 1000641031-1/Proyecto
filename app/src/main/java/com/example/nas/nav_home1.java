@@ -26,15 +26,18 @@ public class nav_home1 extends Fragment {
                              Bundle savedInstanceState) {
         View vista = inflater.inflate(R.layout.fragment_nav_home1, container, false);
 
+        /*Se le asigna una variable para los Button */
         Button solicitudes_ninera_1 = vista.findViewById(R.id.btnsolicitudes);
         Button reservas_ninera_1 = vista.findViewById(R.id.btnmis_reservas);
 
+        /*Se llama la variable que se le asigno al botón y después se le selecciona el id del activity al cual se va a dirigir*/
         solicitudes_ninera_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 findNavController(v).navigate(R.id.listar_ninera);
             }
         });
+        /*Se llama la variable que se le asigno al botón y después se le selecciona el id del activity al cual se va a dirigir*/
         reservas_ninera_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

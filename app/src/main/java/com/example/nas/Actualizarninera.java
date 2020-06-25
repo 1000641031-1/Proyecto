@@ -12,26 +12,29 @@ import com.example.nas.condiciones.usuario;
 
 public class Actualizarninera extends AppCompatActivity {
 
+    /*Se le asigna una variable para los EditText */
     private EditText ed_Cedula, ed_Telefono, ed_Direccion, ed_Correo;
+    /*Se le asigna una variable para los Button */
     Button btnActualizar1, btnbuscar1;
 
-
+    /*Se crea la actividad Actualizarninera*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actualizarninera);
-
+        /*Se le asigna las variables creadas para los EditText a los id de los campos de texto*/
         ed_Cedula=(EditText)findViewById(R.id.cedula2);
         ed_Telefono=(EditText)findViewById(R.id.telefono2);
         ed_Direccion=(EditText)findViewById(R.id.direccion2);
         ed_Correo=(EditText)findViewById(R.id.correo2);
+        /*Si el usuario selecciona un botón este hará una función*/
         btnbuscar1=(Button)findViewById(R.id.btnbuscar1);
         btnActualizar1=(Button)findViewById(R.id.btnActualizar1);
 
 
         final registroSQLite registroSQLite = new registroSQLite(getApplicationContext());
 
-        // Campos de para buscar teléfono, correo y direccion
+        /* Cuando el usuario le de al botón se activara la función buscar que esta en registroSQLite*/
         btnbuscar1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -42,7 +45,7 @@ public class Actualizarninera extends AppCompatActivity {
                 ed_Direccion.setText(usuario.getDireccion());
             }
         });
-        //Campos para actualizar la contraseña
+        /* Cuando el usuario le de al botón se activara la función actualizar que esta en registroSQLite*/
         btnActualizar1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

@@ -18,16 +18,17 @@ public class buscarUsuario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buscar_usuario);
-
+        /*Lo que el usuario ponga el las variables de texto tambien quedan en los EditText */
         ed_Cedula=(EditText)findViewById(R.id.txtcedula5);
         ed_Correo=(EditText)findViewById(R.id.txtnombre);
         ed_Nombre=(EditText)findViewById(R.id.txtcorreo2);
         ed_telefono=(EditText)findViewById(R.id.txttelefono2);
         ed_direccion=(EditText)findViewById(R.id.txtdireccion2);
+        /*Si el usuario selecciona un botón este hará una función*/
         btnbuscar4=(Button) findViewById(R.id.btnbuscar4);
 
         final registroSQLite registroSQLite = new registroSQLite(getApplicationContext());
-
+        /* Cuando el usuario le de al botón se activara la función buscar2 que esta en registroSQLite*/
         btnbuscar4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

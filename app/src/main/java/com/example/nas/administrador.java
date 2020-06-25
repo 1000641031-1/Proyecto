@@ -17,6 +17,7 @@ public class administrador extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
 
+    /*Se crea la actividad padre*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +26,7 @@ public class administrador extends AppCompatActivity {
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        /*Se pone el ID de las páginas a las cuales va dirigir el menú desplegable*/
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home2, R.id.mainActivity)
                 .setDrawerLayout(drawer)

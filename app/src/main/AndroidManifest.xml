@@ -16,7 +16,6 @@
         <activity android:name=".mostrar_ninera" />
         <activity android:name=".listar_perfiles" />
         <activity android:name=".listar_perfiles" />
-        <activity android:name=".descripcionPerfil" />
         <activity android:name=".buscarUsuario" />
         <activity
             android:name=".administrador"

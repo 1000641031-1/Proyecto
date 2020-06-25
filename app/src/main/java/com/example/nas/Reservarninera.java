@@ -23,7 +23,9 @@ public class Reservarninera extends AppCompatActivity implements View.OnClickLis
     SQLiteDatabase.CursorFactory factory;
     private EditText ed_Nombre, ed_Precio, ed_Cantidad, ed_Fecha, ed_Hora, ed_Ninos;
     private Button btnFecha, btnHora;
+    /*Se crean las variables para mostrar el formato de fecha y la hora*/
     private  int dia,mes,ano, hora, minutos;
+    /*Se crean las variables para realizar algunas validaciones*/
     int MenosNinos=4;
     int MasNinos=1;
     int MenosHoras=1;
@@ -33,15 +35,17 @@ public class Reservarninera extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservarninera);
-
+        /*Lo que el usuario ponga el las variables de texto tambien quedan en los EditText */
         ed_Nombre = (EditText) findViewById(R.id.txtNinera);
         ed_Precio = (EditText) findViewById(R.id.txtPrecio);
         ed_Ninos = (EditText) findViewById(R.id.id_cantidadHoras);
         ed_Cantidad = (EditText) findViewById(R.id.txtNinos);
         ed_Fecha = (EditText) findViewById(R.id.txtFecha);
         ed_Hora = (EditText) findViewById(R.id.txtHora);
+        /*Si el usuario selecciona un botón este hará una función*/
         btnFecha = (Button) findViewById(R.id.btnFecha);
         btnHora = (Button) findViewById(R.id.btnHora);
+        /*Se realiza el setOnClickListener */
         btnFecha.setOnClickListener(this);
         btnHora.setOnClickListener( this);
     }
@@ -49,9 +53,12 @@ public class Reservarninera extends AppCompatActivity implements View.OnClickLis
 
     public void reservar(View view){
         try {
+            /*Se llama la base de datos*/
             registroSQLite reg = new registroSQLite(this);
             SQLiteDatabase registroSQLite= reg.getWritableDatabase();
 
+            /*Para poder guardar la información que diligencia en usuario, se le asina a la variable de la base de datos
+             la variable del EditText*/
             String Nombre_reservar=ed_Nombre.getText().toString();
             String Precio_reservar=ed_Precio.getText().toString();
             String Numero_reservar=ed_Ninos.getText().toString();
@@ -59,7 +66,7 @@ public class Reservarninera extends AppCompatActivity implements View.OnClickLis
             String Fecha_reservar=ed_Fecha.getText().toString();
             String Hora_reservar=ed_Hora.getText().toString();
 
-            /*valida si los campos estan vacios*/
+            /*valida si los campos estan vacíos*/
             if(!Nombre_reservar.isEmpty() && !Precio_reservar.isEmpty() && !Cantidad_reservar.isEmpty() && !Fecha_reservar.isEmpty() && !Hora_reservar.isEmpty()) {
                 /*Para poder realizar las validaciones de cantidad de niños*/
                 int cantidad = Integer.parseInt(Cantidad_reservar);
@@ -74,28 +81,57 @@ public class Reservarninera extends AppCompatActivity implements View.OnClickLis
                 int precioreser = Integer.parseInt(Precio_reservar);
                 int Precio = Integer.parseInt(String.valueOf(Precio_reser));
 
-                /*Se guarda lo que ingrese el usuario en la balse de datos*/
-                ContentValues reserva = new ContentValues();
-                reserva.put("Nombre_reservar", Nombre_reservar);
-                reserva.put("Precio_reservar", Precio_reservar);
-                reserva.put("Numero_reservar", Numero_reservar);
-                reserva.put("Cantidad_reservar", Cantidad_reservar);
-                reserva.put("Fecha_reservar", Fecha_reservar);
-                reserva.put("Hora_reservar", Hora_reservar);
-                /*Tabla en la cual se guarda el registro que acabo de hacer el usuario*/
-                registroSQLite.insert("tbl_reservaninera", null, reserva);
-                registroSQLite.close();
+                /*Se hace la función donde se evalua si la cantidad de niños es menor a 4 para seguir con la solicitud*/
+                if (cantidad < menosNinos  ){
+                    /*Se hace la función donde se evalua si la cantidad de niños es mayor o igual a 1 para seguir con la solicitud*/
+                    if (cantidad >= masNinos){
+                        /*Se hace la función donde se evalua si el numero de horas es mayor o igual a 1 para seguir la solicitud*/
+                        if (horas>=menosHoras){
+                            /*Se hace la función donde se evalua si el precioes mayor a $10.000*/
+                            if (precioreser>=Precio){
 
-                /*Todos los campos que el usuario había escrito se eliminan del EditText, pero quedan guardados en la base de datos*/
-                ed_Nombre.setText("");
-                ed_Precio.setText("");
-                ed_Ninos.setText("");
-                ed_Cantidad.setText("");
-                ed_Fecha.setText("");
-                ed_Hora.setText("");
+                                /*Se guarda lo que ingrese el usuario en la balse de datos*/
+                                ContentValues reserva = new ContentValues();
+                                reserva.put("Nombre_reservar", Nombre_reservar);
+                                reserva.put("Precio_reservar", Precio_reservar);
+                                reserva.put("Numero_reservar", Numero_reservar);
+                                reserva.put("Cantidad_reservar", Cantidad_reservar);
+                                reserva.put("Fecha_reservar", Fecha_reservar);
+                                reserva.put("Hora_reservar", Hora_reservar);
+                                /*Tabla en la cual se guarda el registro que acabo de hacer el usuario*/
+                                registroSQLite.insert("tbl_reservaninera", null, reserva);
+                                registroSQLite.close();
 
-                String correString = "Reserva exitosa";
-                Toast.makeText(getApplicationContext(), correString, Toast.LENGTH_SHORT).show();
+                                /*Todos los campos que el usuario había escrito se eliminan del EditText, pero quedan guardados en la base de datos*/
+                                ed_Nombre.setText("");
+                                ed_Precio.setText("");
+                                ed_Ninos.setText("");
+                                ed_Cantidad.setText("");
+                                ed_Fecha.setText("");
+                                ed_Hora.setText("");
+
+                                String correString = "Reserva exitosa";
+                                Toast.makeText(getApplicationContext(), correString, Toast.LENGTH_SHORT).show();
+
+
+                            }else{
+                                String errorString = "Debe ser mayor a $10.000";
+                                Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
+                            }
+                        }else{
+                            String errorString = "Debe ser mayor el número de horas";
+                            Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
+                        }
+                    }else{
+                        String errorString = "Debe ser mayor o igual a 1 niño";
+                        Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    String errorString = "Debe ser menor o igual a 3 niños";
+                    Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
+                }
+
+
             } else {
 
                 String errorString = "Debe llenar todos los campos";

@@ -11,21 +11,26 @@ import android.widget.Toast;
 import com.example.nas.condiciones.usuario;
 
 public class Cambiarpadre extends AppCompatActivity {
+    /*Se le asigna una variable para los EditText */
     private EditText ed_Cedula, ed_Contrasena;
+    /*Se le asigna una variable para los Button */
     Button btnCambiar, btnbuscar2;
 
+    /*Se crea la actividad Cambiarpadre*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cambiarpadre);
 
+        /*Lo que el usuario ponga el las variables de texto tambien quedan en los EditText */
         ed_Cedula=(EditText)findViewById(R.id.txtcedula3);
         ed_Contrasena=(EditText)findViewById(R.id.txtContraseña);
+        /*Si el usuario selecciona un botón este hará una función*/
         btnbuscar2=(Button) findViewById(R.id.btnbuscar2);
         btnCambiar=(Button) findViewById(R.id.btnCambiar);
 
         final registroSQLite registroSQLite = new registroSQLite(getApplicationContext());
-        /*Con este botón ayuda a buscar datos del padre*/
+        /* Cuando el usuario le de al botón se activara la función buscar1 que esta en registroSQLite*/
         btnbuscar2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -35,7 +40,7 @@ public class Cambiarpadre extends AppCompatActivity {
 
             }
         });
-        /*Con este botón se cambia la contraseña en la base de datos, gracias a la fución que esta en la base de datos*/
+        /*Con este botón se cambia la contraseña en la base de datos, gracias a la fución que esta en la clase registroSQLite*/
         btnCambiar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -45,6 +50,5 @@ public class Cambiarpadre extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), correString, Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 }

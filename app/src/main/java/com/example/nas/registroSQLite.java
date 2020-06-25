@@ -44,9 +44,9 @@ public class registroSQLite extends SQLiteOpenHelper{
         nas.execSQL("Create table tbl_reserva(id_reservar integer primary key AUTOINCREMENT, Precio_reservar float, " +
                 "Cantidad_reserva int, Fecha_reservar text, Hora_reservar text )");
     }
-    @Override
 
     /*Si ya estan creadas las tablas se eliminan y se vuelve a crear*/
+    @Override
     public void onUpgrade(SQLiteDatabase nas, int oldVersion, int newVersion) {
         nas.execSQL("drop table if exists usuarios");
         nas.execSQL("create table usuarios(Cedula integer primary key ,Nombre text," +
