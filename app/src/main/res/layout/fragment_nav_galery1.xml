@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_galery1">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="148dp"
+        android:layout_height="136dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/btnActualizarninera1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnActualizarninera1"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="56dp"
+        android:background="#fff"
+        android:text="@string/btnActualizarninera1"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/btnCambiarninera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCambiarninera"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="300dp"
+        android:background="#fff"
+        android:text="@string/btnCambiarninera"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

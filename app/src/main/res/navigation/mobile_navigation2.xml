@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    android:label="string"
+    app:startDestination="@id/nav_home_2">
+
+    <activity
+        android:id="@+id/mostrar"
+        android:name="com.example.nas.mostrar"
+        android:label="activity_mostrar"
+        tools:layout="@layout/activity_mostrar" />
+    <fragment
+        android:id="@+id/nav_home_2"
+        android:name="com.example.nas.nav_home_2"
+        android:label="@string/lblInicio"
+        tools:layout="@layout/fragment_nav_home_2" >
+        <action
+            android:id="@+id/action_nav_home_2_to_mostrar"
+            app:destination="@id/mostrar" />
+        <action
+            android:id="@+id/action_nav_home_2_to_nav_home2"
+            app:destination="@id/nav_home2" />
+        <action
+            android:id="@+id/action_nav_home_2_to_buscarUsuario"
+            app:destination="@id/buscarUsuario" />
+    </fragment>
+    <activity
+        android:id="@+id/nav_home2"
+        android:name="com.example.nas.nav_home2"
+        android:label="activity_nav_home2"
+        tools:layout="@layout/activity_nav_home2" />
+    <activity
+        android:id="@+id/buscarUsuario"
+        android:name="com.example.nas.buscarUsuario"
+        android:label="activity_buscar_usuario"
+        tools:layout="@layout/activity_buscar_usuario" />
+
+</navigation>

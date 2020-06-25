@@ -1,0 +1,216 @@
+<resources>
+    //login
+    <string name="app_name">NAS</string>
+    <string name="txtcorreoL">Correo</string>
+    <string name="txtcontraseñaL">Contraseña</string>
+    <string name="btnrecuperarcontraseña">¿recuperar contraseña?</string>
+    <string name="btnloginL">Siguiente</string>
+    <string name="btnregistroL">Registro</string>
+
+    //registro
+    <string name="btnNiñera">Niñera</string>
+    <string name="btnPadre">Padre</string>
+    <string name="btnAtras">Atrás</string>
+
+    //registro padre
+    <string name="txtNombre2">Nombre</string>
+    <string name="txtDireccion">Dirección</string>
+    <string name="txtCedula">Cédula</string>
+    <string name="txtTelefono">Teléfono</string>
+    <string name="txtCorreo2">Correo</string>
+    <string name="txtContraseña2">Contraseña</string>
+    <string name="txtcodigoseguridad">Pregunta de seguridad</string>
+    <string name="btnSiguiente2">Siguiente</string>
+    <string name="btnAtras2">Atrás</string>
+    <string name="consu">consu</string>
+
+    //registro niñera
+    <string name="txtNombre1">Nombre</string>
+    <string name="txtDireccion2">Dirección</string>
+    <string name="txtCedula2">Cédula</string>
+    <string name="txtTelefono2">Teléfono</string>
+    <string name="txtCorreo3">Correo</string>
+    <string name="txtContraseña3">Contraseña</string>
+    <string name="txtcodigoseguridad2">Pregunta de seguridad</string>
+    <string name="btnSiguiente3">Siguiente</string>
+    <string name="btnAtras3">Atrás</string>
+
+    //Descripción del perfil de la niñera
+    <string name="txtInformacion">Información de tu perfil</string>
+    <string name="txtDescripcion">Descripción</string>
+
+    //menú padre (perfil del padre)
+    <string name="title_activity_padre">padre</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title"></string>
+    <string name="nav_header_subtitle"></string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Editar información</string>
+    <string name="menu_slideshow">Cerrar Sesión</string>
+    <string name="lblmapa">Mapa</string>
+    <string name="home_second">Home Second</string>
+    <string name="btnSolicitar">Solicitar niñera</string>
+    <string name="btnReservar">Reservar niñera</string>
+    <string name="lblsolicitar">Solicitar niñera</string>
+    <string name="lblterminos">Terminos y condiciones</string>
+    <string name="lblterminos2">Terminos y condiciones</string>
+
+    //solicitar niñera (perfil del padre)
+    <string name="txtCantidad">Cantidad de niños</string>
+    <string name="txtHoras">Número de horas</string>
+    <string name="txtPreciosugerido">Precio sugerido</string>
+    <string name="txtRecomendacion">Recomendación sobre su hijo</string>
+    <string name="btnEnviar">Aceptar</string>
+
+    //actualizar (perfil del padre)
+    <string name="txtactualizarpadre">Actualizar información</string>
+    <string name="txtcedula">Cédula</string>
+    <string name="txtcorreo">Correo</string>
+    <string name="txtdireccion">Dirección</string>
+    <string name="txttelefono">Teléfono</string>
+    <string name="txtBuscar">Buscar</string>
+    <string name="btnbuscar">Buscar</string>
+    <string name="btnActualizar">Aceptar</string>
+
+    //reservar (perfil del padre)
+    <string name="txtPrecio">Precio sugerido</string>
+    <string name="txtNinos">Número de niños</string>
+    <string name="txtNinera">Nombre de la niñera</string>
+    <string name="txtFecha">Fecha</string>
+    <string name="btnFecha">Fecha</string>
+    <string name="btnHora">Hora</string>
+    <string name="txtHora">Hora</string>
+    <string name="cantidadHoras">Número de horas</string>
+    <string name="btnReservar2">Aceptar</string>
+
+    //cambiar contraseña (perfil del padre)
+    <string name="txtContraseña">Contraseña </string>
+    <string name="btnCambiar">Aceptar</string>
+    <string name="cambiarpadre">Cambiar contraseña</string>
+    <string name="btnbuscar2">Buscar</string>
+    <string name="txtcedula3">Cédula</string>
+
+    //niñera
+    <string name="lblEditar">Editar información</string>
+    <string name="lblInicio">Nas</string>
+    <string name="lblActualizar">Actualizar información</string>
+    <string name="lblCambiar">Cambiar contraseña</string>
+    <string name="lblSolicitudes">Solicitudes</string>
+    <string name="btnELimiar">Eliminar</string>
+    <string name="btnTrabajar">Comenzar a trabajar</string>
+    <string name="lblcalificacion">Mis calificaciones</string>
+    <string name="btnActualizarninera1">Actualizar información</string>
+    <string name="btnCambiarninera">Cambiar contraseña</string>
+
+    //actualizar (perfil del niñera)
+    <string name="txtactualizarpadre1">Actualizar información</string>
+    <string name="txtcedula1">Cédula</string>
+    <string name="txtcorreo1">Correo</string>
+    <string name="txtdireccion1">Dirección</string>
+    <string name="txttelefono1">Teléfono</string>
+    <string name="btnbuscar1">Buscar</string>
+    <string name="btnActualizar1">Aceptar</string>
+
+    //cambiar contraseña (perfil del niñera)
+    <string name="txtContraseña4">Contraseña</string>
+    <string name="btnCambiar1">Aceptar</string>
+    <string name="btnbuscar3">Buscar</string>
+    <string name="txtcedula4">Cédula</string>
+
+    //admin
+    <string name="btneliminar">Eliminar usuario</string>
+    <string name="btnmostrar">Mostrar usuario</string>
+    <string name="btnbuscarusu">Buscar usuario</string>
+
+    //admin mostrar
+    <string name="lblInicio1">Nas</string>
+    <string name="lblUsuarios">Usuarios registrados</string>
+    <string name="btnMostrar">Usuarios registrados</string>
+
+    //admin buscar
+    <string name="txtcedula5">Cédula</string>
+    <string name="txtnombre">Nombre</string>
+    <string name="txtcorreo2">Correo</string>
+    <string name="txtdireccion2">Teléfono</string>
+    <string name="txttelefono2">Dirección</string>
+    <string name="btnAceptar">Eliminar usuario</string>
+    <string name="btnbuscar4">Buscar</string>
+
+    <string name="access_token" translatable="false">pk.eyJ1IjoibWljaGVsbXVhayIsImEiOiJjazduc3plMnAwMjdvM2ZtaWF5MnAzeTlkIn0.wQd-aDigDoN9mFUmbYwv2Q</string>
+    <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+    //
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ninera">ninera</string>
+    <string name="title_activity_admin">admin</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="terminos2">POLÍTICA DE PRIVACIDAD:
+        El presente Política de Privacidad establece los términos en que NAS usa y protege la información que es
+        proporcionada por sus usuarios al momento de utilizar su aplicativo móvil. Esta compañía está comprometida con la
+        seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted
+        pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento.
+        Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y
+        enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios. Información que
+        es recogidaNuestro sitio web podrá recoger información personal por ejemplo: Nombre,  información de contacto como
+        su dirección de correo electrónica e información demográfica.Uso de la información recogida Nuestro aplicativo móvil
+        emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro
+        de usuarios.
+        NAS está altamente comprometido para cumplir con el compromiso de mantener su información segura.
+        Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún
+        acceso no autorizado.
+        Control de su información personal
+        En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a
+        nuestra App.Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su
+        consentimiento, salvo que sea requerido por un juez con un orden judicial.
+        Uso de esta app, sus servicios y contenidos:
+        El ingreso y/o uso de este aplicativo móvil por parte del usuario deberá hacerse teniendo en cuenta, entre otras, las siguientes condiciones particulares, las cuales se entienden comprendidas y aceptadas por el usuario, al ingresar
+y/o usar este aplicativo móvil, y mientras éstas se encuentren en esta App, NAS no será responsable por su cumplimiento y el usuario mantendrá indemne a NAS por todo concepto:
+
+• El usuario está en la obligación de acatar estos términos y condiciones de uso.
+
+• El usuario está en la obligación de emplear la debida precaución y diligencia cuando acceda, use y consulte esta App.
+
+• El usuario no puede infringir cualquier ley o regulación aplicable, por tanto, al usuario no le está permitido el uso de esta App con fines ilícitos o lesivos contra esta App o cualquier tercero, o que, de cualquier forma, puedan causar perjuicio o impedir el normal funcionamiento de esta App.
+
+• Al usuario le está prohibido usar esta App para implantar, enviar, distribuir o transmitir cualquier virus o programa dañino o potencialmente dañino, así como cualquier programa que tenga
+como propósito dañar la operación, el acceso, uso o contenido de esta App, o impedir o limitar el
+acceso o uso de la misma por parte de
+otros usuarios.
+
+•Esta App no esta comprometida a hacerse cargo por ninguna clase de pertenencia propietaria del usuario, ya que solo actuará como intermediaria entre cliente y usuario, el cliente deberá hacerse cargo del debido cuidado de sus pertenencias.
+
+• Al usuario le está prohibido incluir, publicar, exponer, cargar, distribuir o diseminar cualquier tema,
+nombre, material o información inapropiado, infractor, inmoral, ilegal, obsceno, blasfemo, difamatorio,
+abusivo, amenazante, vulgar, racista, sexista, escandaloso, provocador, pornográfico, irreverente, y ofensivo para NAS, o terceros, o cualquier otro usuario, o que atente contra derechos y libertades fundamentales, o que constituya un delito o conducta criminal bajo las leyes vigentes.
+
+NAS se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento, se le pide formalmente al usuario que este constantemente revisando los términos y condiciones del aplicativo. </string>
+    <string name="txttiempo">Tiempo</string>
+    <string name="txtfecha">Fecha</string>
+    <string name="txtcliente">Cliente</string>
+    <string name="title_activity_administrador">administrador</string>
+
+    //recuperar contraseña-correo
+    <string name="txtcorreoR">Correo electronico</string>
+    <string name="txtcodigoR">Pregunta de seguridad</string>
+    <string name="txtcontraseñaR">Contraseña</string>
+    <string name="btnconfirmarR">Confirmar</string>
+    <string name="btnatrasR">Volver</string>
+    <string name="lblrecuperarcontraseña">Recuperar contraseña</string>
+    <string name="first_fragment_label" />
+    <string name="second_fragment_label" />
+
+    //recuperar contraseña-correo niñera
+    <string name="txtcorreoR2">Correo electronico</string>
+    <string name="txtcodigoR2">Pregunta de seguridad</string>
+    <string name="txtcontraseñaR2">Contraseña</string>
+    <string name="btnconfirmarR2">Confirmar</string>
+    <string name="btnatrasR2">Volver</string>
+    <string name="lblrecuperarcontraseña2">Recuperar contraseña</string>
+
+</resources>

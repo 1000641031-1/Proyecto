@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registropadre">
+
+    <Button
+        android:id="@+id/btnAtras2"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="56dp"
+        android:background="#00BCD4"
+        android:onClick="atras"
+        android:text="@string/btnAtras2"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre2"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/txtNombre2"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtCedula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCedula"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/txtCedula"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/txtTelefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/txtTelefono"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/txtDireccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDireccion"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/txtDireccion"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txtCorreo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCorreo2"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/txtCorreo2"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txtContraseña2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtContraseña2"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:hint="@string/txtContraseña2"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtras2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="137dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/btnSiguiente2"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="Registrar"
+        android:text="@string/btnSiguiente2"
+        android:background="#fff"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAtras2"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

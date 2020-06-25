@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buscarUsuario">
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="179dp"
+        android:layout_height="162dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="319dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/txtnombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/txtcedula5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/txtcedula5"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnbuscar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00BCD4"
+            android:text="@string/btnbuscar4"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="277dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/txtnombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtcorreo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtcorreo2"
+        android:layout_width="277dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/txtcorreo2"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txtdireccion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txttelefono2"
+        android:layout_width="277dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="164dp"
+        android:ems="10"
+        android:hint="@string/txttelefono2"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtdireccion2"
+        android:layout_width="277dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/txtdireccion2"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txttelefono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

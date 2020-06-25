@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.nas.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_nav_home_to_reservarninera"
+            app:destination="@id/reservarninera" />
+        <action
+            android:id="@+id/action_nav_home_to_listar_perfiles"
+            app:destination="@id/listar_perfiles" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.nas.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.nas.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_actualizarpadre2"
+            app:destination="@id/actualizarpadre2" />
+        <action
+            android:id="@+id/action_nav_gallery_to_cambiarpadre3"
+            app:destination="@id/cambiarpadre3" />
+    </fragment>
+
+    <activity
+        android:id="@+id/solicitarninera"
+        android:name="com.example.nas.solicitarninera"
+        android:label="activity_solicitarninera"
+        tools:layout="@layout/activity_solicitarninera" />
+    <fragment
+        android:id="@+id/terminos1"
+        android:name="com.example.nas.terminos1"
+        android:label="@string/lblterminos"
+        tools:layout="@layout/fragment_terminos1" />
+    <activity
+        android:id="@+id/actualizarpadre2"
+        android:name="com.example.nas.Actualizarpadre"
+        android:label="activity_actualizarpadre"
+        tools:layout="@layout/activity_actualizarpadre" />
+    <activity
+        android:id="@+id/cambiarpadre3"
+        android:name="com.example.nas.Cambiarpadre"
+        android:label="activity_cambiarpadre"
+        tools:layout="@layout/activity_cambiarpadre" />
+    <activity
+        android:id="@+id/reservarninera"
+        android:name="com.example.nas.Reservarninera"
+        android:label="activity_reservarninera"
+        tools:layout="@layout/activity_reservarninera" />
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.nas.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/listar_perfiles"
+        android:name="com.example.nas.listar_perfiles"
+        android:label="activity_listar_perfiles"
+        tools:layout="@layout/activity_listar_perfiles" />
+</navigation>

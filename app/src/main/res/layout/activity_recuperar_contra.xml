@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recuperar_contra">
+
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="295dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcorreoR1" />
+
+    <TextView
+        android:id="@+id/lblrecuperarcontraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblrecuperarcontraseña"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <Button
+        android:id="@+id/btnatrasR1"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:background="#00BCD4"
+        android:onClick="atrasR"
+        android:text="@string/btnatrasR"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896" />
+
+    <EditText
+        android:id="@+id/txtcodigoR1"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/txtcodigoR"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+    <EditText
+        android:id="@+id/txtcontraseñaR1"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txtcontraseñaR"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnconfirmarR1"></EditText>
+
+    <Button
+        android:id="@+id/btnconfirmarR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:background="#00BCD4"
+        android:text="@string/btnconfirmarR"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcodigoR1" />
+
+    <EditText
+        android:id="@+id/txtcorreoR1"
+        android:layout_width="294dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/txtcorreoR"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblrecuperarcontraseña" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

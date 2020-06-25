@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation1"
+    android:label="string"
+    app:startDestination="@id/nav_home1">
+
+    <fragment
+        android:id="@+id/nav_home1"
+        android:name="com.example.nas.nav_home1"
+        android:label="@string/lblInicio"
+        tools:layout="@layout/fragment_nav_home1" >
+        <action
+            android:id="@+id/action_nav_home1_to_listar_ninera"
+            app:destination="@id/listar_ninera" />
+        <action
+            android:id="@+id/action_nav_home1_to_listar_reserva2"
+            app:destination="@id/listar_reservas" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_galery1"
+        android:name="com.example.nas.nav_galery1"
+        android:label="@string/lblEditar"
+        tools:layout="@layout/fragment_nav_galery1">
+        <action
+            android:id="@+id/action_nav_galery1_to_actualizarninera"
+            app:destination="@id/actualizarninera" />
+        <action
+            android:id="@+id/action_nav_galery1_to_cambiarninera"
+            app:destination="@id/cambiarninera" />
+    </fragment>
+    <activity
+        android:id="@+id/calificacion"
+        android:name="com.example.nas.calificacion"
+        android:label="@string/lblcalificacion"
+        tools:layout="@layout/activity_calificacion" />
+    <fragment
+        android:id="@+id/terminos2"
+        android:name="com.example.nas.terminos2"
+        android:label="@string/lblterminos2"
+        tools:layout="@layout/fragment_terminos2" />
+    <activity
+        android:id="@+id/actualizarninera"
+        android:name="com.example.nas.Actualizarninera"
+        android:label="activity_actualizarninera"
+        tools:layout="@layout/activity_actualizarninera" />
+    <activity
+        android:id="@+id/cambiarninera"
+        android:name="com.example.nas.Cambiarninera"
+        android:label="activity_cambiarninera"
+        tools:layout="@layout/activity_cambiarninera" />
+    <activity
+        android:id="@+id/mapbox"
+        android:name="com.example.nas.mapbox"
+        android:label="activity_mapbox"
+        tools:layout="@layout/activity_mapbox" />
+    <fragment
+        android:id="@+id/soli"
+        android:name="com.example.nas.controlador.soli"
+        android:label="fragment_soli"
+        tools:layout="@layout/fragment_soli" >
+        <action
+            android:id="@+id/action_soli_to_mapbox"
+            app:destination="@id/mapbox" />
+    </fragment>
+    <activity
+        android:id="@+id/listar_ninera"
+        android:name="com.example.nas.listar_ninera"
+        android:label="activity_listar_ninera"
+        tools:layout="@layout/activity_listar_ninera" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.nas.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/listar_reservas"
+        android:name="com.example.nas.listar_reserva"
+        android:label="activity_listar_reserva"
+        tools:layout="@layout/activity_listar_reserva" />
+</navigation>

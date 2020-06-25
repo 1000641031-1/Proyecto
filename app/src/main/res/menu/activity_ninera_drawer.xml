@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home1"
+            android:title="@string/menu_home"
+            android:icon="@drawable/inicio"/>
+        <item
+            android:id="@+id/nav_galery1"
+            android:title="@string/menu_gallery"
+            android:icon="@drawable/editar_infromacion"/>
+        <item
+            android:id="@+id/calificacion"
+            android:title="@string/lblcalificacion"
+            android:icon="@drawable/calificacion"/>
+        <item
+            android:id="@+id/terminos2"
+            android:title="@string/lblterminos2"
+            android:icon="@drawable/terminos"/>
+        <item
+            android:id="@+id/mainActivity"
+            android:title="@string/menu_slideshow"
+            android:icon="@drawable/cerrar_sesion"/>
+    </group>
+</menu>

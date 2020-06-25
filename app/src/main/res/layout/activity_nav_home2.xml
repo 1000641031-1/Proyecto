@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_home2">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="179dp"
+        android:layout_height="162dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/txtcedula5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNotificacion"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="104dp"
+        android:background="#00BCD4"
+        android:text="@string/btnAceptar"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtcedula5"
+        android:layout_width="252dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="220dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/txtcedula5"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnNotificacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

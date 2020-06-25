@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reservarninera">
+
+    <Button
+        android:id="@+id/btnHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/btnHora"
+        app:layout_constraintBottom_toTopOf="@+id/btnReservar2"
+        app:layout_constraintEnd_toStartOf="@+id/txtHora"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNinera"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/txtNinera"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtPrecio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPrecio"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/txtPrecio"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/id_cantidadHoras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNinos"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/txtNinos"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnFecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/txtNinera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReservar2"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="44dp"
+        android:background="#00BCD4"
+        android:onClick="reservar"
+        android:text="@string/btnReservar2"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/txtFecha"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtHora"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txtHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="@string/txtHora"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnReservar2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/btnFecha"
+        app:layout_constraintBottom_toTopOf="@+id/btnHora"
+        app:layout_constraintEnd_toStartOf="@+id/txtFecha"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/id_cantidadHoras"
+        android:layout_width="294dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/cantidadHoras"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/txtNinos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
