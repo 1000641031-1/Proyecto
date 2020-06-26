@@ -21,10 +21,13 @@ import java.util.ArrayList;
 public class listar_perfiles extends AppCompatActivity {
 
     RecyclerView listarNinera;
+    /*Se crea el recyclearview  y se le asigna un nombre*/
     ArrayList<Nineras> ninerasArrayList;
+    /*Se crea una array  y se le asigna un nombre*/
     registroSQLite db;
+    /*Se llama la actividad registro que es donde estan los registros para listar niñeras*/
     Nineras nineras;
-
+    /*Se crea una variable y se le asigna un nombre*/
     private AdaptadorNineras adaptadorNineras;
 
     @Override
@@ -37,8 +40,11 @@ public class listar_perfiles extends AppCompatActivity {
         db = new registroSQLite(this);
 
         listarNinera.setLayoutManager(new LinearLayoutManager(this));
+        /*Se compara los adaptadores y dice que crea un listar  */
         adaptadorNineras = new AdaptadorNineras(ninerasArrayList);
+        /*Se muestran los datos pero por el momento son vacios*/
         mostrarNineras();
+        /*Se hace el evento click para poder entrar a cada tarjeta del perfil*/
         adaptadorNineras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,7 +62,9 @@ public class listar_perfiles extends AppCompatActivity {
          nineras = null;
 
         Cursor cursor = sqLiteDatabase.rawQuery("Select * from usuarios where rol = 'niñera'", null);
+        /*Se traen los datos de la tabla niñera*/
         while (cursor.moveToNext()) {
+            /*Se hace la comparacion de los que estan en la base de datos con los campos que estan en la tarjeta */
             nineras = new Nineras();
             nineras.setCedula(cursor.getString(0));
             nineras.setNombre(cursor.getString(1));

@@ -1,7 +1,7 @@
 package com.example.nas.entidades;
 
 public class solicitudNinera {
-
+    /*Se declaran las variables */
     private Integer id_solicitud;
     private Integer cantidad_solicitud;
     private String hora_solicitud;
@@ -10,15 +10,16 @@ public class solicitudNinera {
 
     public solicitudNinera() {
     }
-
+    /*con las variables declaradas se le asgina su campo y su tipo de dato */
     public solicitudNinera(Integer id_solicitud, Integer cantidad_solicitud, String hora_solicitud, Integer precio_solicitud, String especificar_solicitud) {
+        /*Se hace la comparacion de los datos en la base de datos*/
         this.id_solicitud = id_solicitud;
         this.cantidad_solicitud = cantidad_solicitud;
         this.hora_solicitud = hora_solicitud;
         this.precio_solicitud = precio_solicitud;
         this.especificar_solicitud = especificar_solicitud;
     }
-
+    /*Se hace el get y set de cada campo */
     public Integer getId_solicitud() {
         return id_solicitud;
     }

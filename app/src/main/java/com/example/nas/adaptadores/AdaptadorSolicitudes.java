@@ -15,20 +15,23 @@ import java.util.ArrayList;
 
 public class AdaptadorSolicitudes extends RecyclerView.Adapter<AdaptadorSolicitudes.solicitudesView> {
 
+    /*Se declara la array*/
     private ArrayList<solicitudNinera>solicitudNineraList;
-
+    /*Se crea una clase para listar solicitudes */
     public AdaptadorSolicitudes(ArrayList<solicitudNinera> solicitudNineraList) {
         this.solicitudNineraList = solicitudNineraList;
     }
 
     @NonNull
     @Override
+    /*Se dice que los datos se van a poner dentro de una tarjeta, la tarjeta esta en el fragmento soli y devuleve la vista*/
     public solicitudesView onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_soli,parent,false);
         return new solicitudesView(view);
     }
 
     @Override
+    /*Se traen los datos de la Bd */
     public void onBindViewHolder(@NonNull solicitudesView holder, int position) {
         solicitudNinera solicitud = solicitudNineraList.get(position);
         holder.cantidadS.setText("Cantidad de niños: "+solicitud.getCantidad_solicitud().toString());
@@ -42,7 +45,7 @@ public class AdaptadorSolicitudes extends RecyclerView.Adapter<AdaptadorSolicitu
     public int getItemCount() {
         return solicitudNineraList.size();
     }
-
+    /*Se listan las solicitudes con su respectivo campo*/
     public class solicitudesView extends RecyclerView.ViewHolder {
         private TextView cantidadS,precioS,horasS,recomendacionS;
         public solicitudesView(@NonNull View itemView) {

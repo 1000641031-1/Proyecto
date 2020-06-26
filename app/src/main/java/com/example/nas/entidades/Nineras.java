@@ -3,7 +3,7 @@ package com.example.nas.entidades;
 import java.io.Serializable;
 
 public class Nineras implements Serializable {
-
+    /*Se declaran las variables */
     private String cedula;
     private String nombre;
     private String telefono;
@@ -15,8 +15,9 @@ public class Nineras implements Serializable {
 
     public Nineras() {
     }
-
+    /*con las variables declaradas se le asgina su campo y su tipo de dato */
     public Nineras(String cedula, String nombre, String telefono, String direccion, String correo, String clave, String rol, String descripcion) {
+        /*Se hace la comparacion de los datos en la base de datos*/
         this.cedula = cedula;
         this.nombre = nombre;
         this.telefono = telefono;
@@ -26,6 +27,7 @@ public class Nineras implements Serializable {
         this.rol = rol;
         this.descripcion = descripcion;
     }
+    /*Se hace el get y set de cada campo */
 
     public String getCedula() {
         return cedula;

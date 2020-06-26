@@ -18,6 +18,7 @@ public class AdaptadorNineras extends RecyclerView.Adapter<AdaptadorNineras.nine
 
     private ArrayList<Nineras> nineraList;
     private View.OnClickListener listener;
+    /*Se crea una clase para listar perfiles de niñeras */
     public AdaptadorNineras(ArrayList<Nineras> nineraList) {
         this.nineraList = nineraList;
     }
@@ -25,6 +26,7 @@ public class AdaptadorNineras extends RecyclerView.Adapter<AdaptadorNineras.nine
 
     @NonNull
     @Override
+    /*Se dice que los datos se van a poner dentro de una tarjeta, la tarjeta esta en el fragmento servi y devuleve la vista*/
     public ninerasView onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_servi,parent,false);
         view.setOnClickListener(this);
@@ -32,6 +34,7 @@ public class AdaptadorNineras extends RecyclerView.Adapter<AdaptadorNineras.nine
     }
 
     @Override
+    /*Se traen los datos de la Bd */
     public void onBindViewHolder(@NonNull ninerasView holder, int position) {
         Nineras nineras = nineraList.get(position);
         holder.nombreNinera.setText(nineras.getNombre());
@@ -48,6 +51,7 @@ public class AdaptadorNineras extends RecyclerView.Adapter<AdaptadorNineras.nine
     }
 
     @Override
+    /*Se hace enevento click para mandar a otra vista  */
     public void onClick(View view) {
         if (listener!=null){
             listener.onClick(view);
@@ -55,6 +59,7 @@ public class AdaptadorNineras extends RecyclerView.Adapter<AdaptadorNineras.nine
     }
 
     public class ninerasView extends RecyclerView.ViewHolder {
+        /*Se listan las niñeras con su respectivo campo*/
         TextView nombreNinera,direccionNinera;
         public ninerasView(@NonNull View itemView) {
             super(itemView);
